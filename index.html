@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for the QuranScroll mobile application">
     <title>Privacy Policy - QuranScroll</title>
     <style>
         body {
@@ -19,79 +20,108 @@
         p, li {
             margin-bottom: 12px;
         }
-        code {
-            background: #f4f4f4;
-            padding: 2px 5px;
-            border-radius: 4px;
+        a {
+            color: #237a4b;
         }
     </style>
 </head>
 <body>
 
     <h1>Privacy Policy for QuranScroll</h1>
-    <p><strong>Last Updated:</strong> May 13, 2026</p>
+    <p><strong>Last Updated:</strong> August 23, 2026</p>
 
-    <p>QuranScroll is committed to protecting your privacy. This Privacy Policy explains what information the app accesses, how it is used, and how that information is handled when you use QuranScroll.</p>
+    <p>QuranScroll is committed to protecting your privacy. This Privacy Policy explains what information the app accesses, what remains on your device, what limited information is transmitted when you use online or purchase features, and how that information is handled.</p>
 
     <h2>1. Overview</h2>
-    <p>QuranScroll does not require account creation and does not collect or sell personally identifiable information such as your name, email address, or phone number through the app itself.</p>
+    <p>QuranScroll does not require you to create an account. The app does not use third-party advertising SDKs, does not sell personal information, and does not upload your Quran reading activity, bookmarks, streaks, reading statistics, Focus App Blocker selections, or personal app preferences to QuranScroll servers.</p>
+    <p>Some optional features require an internet connection. In particular, optional Google Play purchases require limited purchase and transaction information to be securely transmitted and retained for verification, fraud prevention, aggregate funding progress, and refund handling. These practices are described below.</p>
 
     <h2>2. Information Stored on Your Device</h2>
-    <p>To provide core app functionality, QuranScroll stores certain data locally on your device. This may include:</p>
+    <p>To provide core app functionality, QuranScroll stores data locally on your device. This may include:</p>
     <ul>
-        <li>Your reading progress, last-read verse, Juz progress, and bookmarks</li>
-        <li>Your app preferences, such as translation settings, font choices, reader mode, and theme selection</li>
-        <li>Your Focus App Blocker settings, including selected blocked apps and unlock preferences</li>
-        <li>Downloaded audio and other cached content used for app performance and offline access</li>
+        <li>Your reading progress, last-read verse, Juz progress, bookmarks, bookmark categories, streaks, and reading statistics</li>
+        <li>Your app preferences, including language, translation, Tafsir source, font, reader mode, audio, reminder, and theme settings</li>
+        <li>Your Focus App Blocker settings, including the apps you select and your unlock preferences</li>
+        <li>Downloaded recitation audio, Quran fonts, Tafsir cache, and other cached content used for performance or offline access</li>
+        <li>Custom background images you select from your device</li>
+        <li>Supporter Cards, including a card reference derived from the purchase token, the purchased product, purchase date, and whether the purchase was a test purchase</li>
     </ul>
-    <p>This information is stored locally on your device and is not uploaded to our servers by QuranScroll.</p>
+    <p>This locally stored reading and preference data is not uploaded to QuranScroll servers. You can remove local app data through applicable in-app controls, your device's app-storage settings, or by uninstalling QuranScroll. Uninstalling or clearing app storage may permanently remove locally stored data.</p>
 
-    <h2>3. Accessibility Permission and Focus App Blocker</h2>
-    <p>On Android, QuranScroll offers an optional feature called <strong>Focus App Blocker</strong>. This feature uses Android's Accessibility access to detect when selected apps are opened so QuranScroll can present a Quran reading challenge before allowing access to those selected apps.</p>
+    <h2>3. Optional Google Play Purchases and Funding Goal</h2>
+    <p>QuranScroll offers optional one-time Supporter Card purchases through Google Play Billing. Google Play processes the payment. QuranScroll does not receive or store your payment-card number, bank-account details, or Google account password.</p>
+    <p>When you initiate or complete a Supporter Card purchase, the app transmits the app package name, purchased product identifier, and Google Play purchase token over an encrypted HTTPS connection to QuranScroll's funding service. The service uses the Google Play Developer API to verify and consume the purchase.</p>
+    <p>After verification, QuranScroll retains a transaction record containing:</p>
+    <ul>
+        <li>A one-way SHA-256 hash of the purchase token; the raw purchase token is not stored in the transaction database</li>
+        <li>The product identifier, Google Play order identifier, purchase time, quantity, and purchase region</li>
+        <li>The transaction status, including whether it was credited, a test purchase, refunded, canceled, or otherwise voided</li>
+        <li>The nominal amount credited to the applicable yearly funding goal</li>
+    </ul>
+    <p>This information is used only to verify purchases, prevent duplicate or fraudulent credits, deliver the Supporter Card, maintain an aggregate yearly funding total, and correctly process cancellations, refunds, and voided purchases. The publicly displayed funding goal contains aggregate totals only and does not expose individual purchase records or purchaser identities.</p>
+    <p>Purchase verification and transaction records are hosted using Google Cloud services, including Cloud Run and Firestore, and may be processed through Google Play and Google Cloud infrastructure. Google handles information under its own applicable terms and privacy policies.</p>
+
+    <h2>4. Accessibility Permission and Focus App Blocker</h2>
+    <p>On Android, QuranScroll offers an optional feature called <strong>Focus App Blocker</strong>. This feature uses Android Accessibility access to detect when an app you selected is opened so QuranScroll can present a Quran reading challenge before allowing access to that app.</p>
     <p>If you enable this feature:</p>
     <ul>
-        <li>QuranScroll may detect the package name and app label of apps you choose to block</li>
-        <li>QuranScroll uses this information only to determine when to show the unlock reading flow</li>
-        <li>Accessibility access is used only for this optional blocker feature and can be disabled at any time in your Android Accessibility settings</li>
-        <li>QuranScroll does not use Accessibility access to read personal messages, passwords, typed text, or content from other apps for advertising or profiling purposes</li>
+        <li>QuranScroll accesses the package name and app label of apps you choose to block</li>
+        <li>This information is used only to determine when to show the unlock reading flow</li>
+        <li>Accessibility access can be disabled at any time in Android Accessibility settings</li>
+        <li>QuranScroll does not use Accessibility access to read personal messages, passwords, typed text, or the contents of other apps for advertising, analytics, or profiling</li>
     </ul>
-    <p>Information related to the Focus App Blocker is handled locally on the device and is not sold or shared for marketing purposes.</p>
+    <p>Focus App Blocker selections and activity are handled locally on your device and are not uploaded to QuranScroll servers.</p>
 
-    <h2>4. Camera and Photo Library Access</h2>
-    <p>QuranScroll may request access to your device's camera or photo library to allow you to choose or capture an image for use as a custom background theme.</p>
+    <h2>5. Photo Library Access</h2>
+    <p>QuranScroll may allow you to select an image from your device for use as a custom background theme.</p>
     <ul>
-        <li>Images are selected and processed locally on your device</li>
-        <li>Images are not uploaded to QuranScroll servers by this feature</li>
-        <li>You can remove a custom background at any time within the app</li>
+        <li>The selected image is copied and processed locally on your device</li>
+        <li>The image is not uploaded to QuranScroll servers</li>
+        <li>You can replace or remove the custom background within the app</li>
     </ul>
 
-    <h2>5. Notifications</h2>
-    <p>If you enable reminders, QuranScroll may request permission to send local notifications, such as reading reminders. These notifications are scheduled on your device. QuranScroll does not require notification permission to use the main reading features.</p>
+    <h2>6. Notifications</h2>
+    <p>If you enable reading reminders, QuranScroll requests permission to send notifications. Reminder schedules and streak-related notification information are handled locally on your device. Notification permission is not required to use the main Quran reading features.</p>
 
-    <h2>6. Audio Features</h2>
-    <p>QuranScroll includes Quran audio playback and may download or cache recitation audio files on your device to improve playback performance or offline availability. These audio files are stored locally on your device.</p>
+    <h2>7. Audio, Fonts, Tafsir, and Other Online Content</h2>
+    <p>QuranScroll may connect to external content providers to stream or download Quran recitations, word audio, Quran fonts, or Tafsir. Current providers include EveryAyah, Quran.com/Quran Foundation services, and other sources identified in the app's Credits section.</p>
+    <p>When your device requests content from an external provider, that provider may receive standard network information such as your IP address, request time, requested resource, and basic connection or device information. This is necessary to deliver the requested content and is handled according to the provider's own privacy practices. Downloaded content and caches are stored locally on your device.</p>
+    <p>The app may also request public Discord community information to display the community invitation and approximate online-member count. If you open Discord, a feedback form, or another external link, the destination service's own privacy policy applies.</p>
 
-    <h2>7. Automatically Collected Information</h2>
-    <p>The app may process limited technical information necessary for functionality, debugging, compatibility, and performance, such as device type, operating system version, and crash-related information. We do not use this information to personally identify you.</p>
+    <h2>8. Technical and Request Information</h2>
+    <p>QuranScroll does not currently use advertising or behavioral analytics SDKs. When the app communicates with QuranScroll's funding service or an external content provider, the service provider may automatically process limited request information, such as IP address, request time, response status, user agent, or similar security and operational logs. This information may be used for service delivery, abuse prevention, debugging, security, and reliability, and is not used by QuranScroll for advertising or behavioral profiling.</p>
 
-    <h2>8. Third-Party Services</h2>
-    <p>QuranScroll does not use third-party advertising SDKs and does not sell your personal data. Some app features may rely on platform or library components provided by Android, Expo, or similar infrastructure used to operate app functionality such as notifications, media handling, or file access.</p>
+    <h2>9. Third-Party Services</h2>
+    <p>Depending on the features you choose to use, QuranScroll may interact with:</p>
+    <ul>
+        <li>Google Play Billing and the Google Play Developer API for optional purchases, purchase verification, and refunds</li>
+        <li>Google Cloud Run, Firestore, and Pub/Sub for secure purchase processing and aggregate funding-goal updates</li>
+        <li>EveryAyah for Quran recitation audio</li>
+        <li>Quran.com/Quran Foundation services for Quran fonts, word audio, and Tafsir content</li>
+        <li>Discord for optional community information and invitations</li>
+        <li>Your operating system and Expo/React Native components for local notifications, audio, file selection, and sharing</li>
+    </ul>
+    <p>These providers may process information according to their own terms and privacy policies. QuranScroll does not authorize these providers to use QuranScroll purchase-verification data for advertising.</p>
 
-    <h2>9. Data Sharing</h2>
-    <p>QuranScroll does not sell your personal information. We do not share your locally stored reading data, blocked app selections, or custom background images with third parties for advertising purposes.</p>
+    <h2>10. Data Sharing and Sale</h2>
+    <p>QuranScroll does not sell personal information and does not share your locally stored Quran reading data, bookmarks, Focus App Blocker selections, or custom background images for advertising or marketing. Limited purchase and technical information is processed by Google Play and Google Cloud only as needed to operate the optional purchase feature, maintain service security, and comply with applicable requirements.</p>
 
-    <h2>10. Data Security</h2>
-    <p>QuranScroll is designed to keep most user data on the device. However, no method of storage or transmission is completely secure, and you use the app at your own discretion.</p>
+    <h2>11. Data Retention and Requests</h2>
+    <p>Local information remains on your device until you remove it, clear app storage, or uninstall the app. Server-side purchase records may be retained for as long as reasonably necessary to prevent duplicate credits, preserve transaction and funding-goal integrity, handle refunds or disputes, maintain security, and meet legal, tax, accounting, or platform obligations.</p>
+    <p>To ask a question or make a privacy or deletion request concerning server-side purchase information, email <a href="mailto:fawwynawwy.dev@gmail.com">fawwynawwy.dev@gmail.com</a>. Include the Google Play order identifier if your request concerns a purchase. We may need to retain limited information where required for transaction integrity, fraud prevention, dispute resolution, or legal compliance.</p>
 
-    <h2>11. Children's Privacy</h2>
-    <p>QuranScroll is not intended to knowingly collect personal information from children.</p>
+    <h2>12. Data Security</h2>
+    <p>QuranScroll is designed to keep Quran reading activity and most preferences on your device. Purchase-verification requests use HTTPS, raw purchase tokens are replaced by one-way hashes in persistent transaction records, and access to backend records is restricted through Google Cloud access controls. However, no method of electronic storage or transmission can be guaranteed to be completely secure.</p>
 
-    <h2>12. Changes to This Privacy Policy</h2>
-    <p>This Privacy Policy may be updated from time to time. Any changes will be reflected by updating the “Last Updated” date on this page.</p>
+    <h2>13. Children's Privacy</h2>
+    <p>QuranScroll does not require children to create an account or provide a name, email address, or phone number. Optional purchases are processed through Google Play and may be subject to Google Play family purchase approvals and parental controls. Parents and guardians should supervise purchases and device-permission choices made by children. If you believe a child has provided personal information to QuranScroll, contact us using the address below.</p>
 
-    <h2>13. Contact Us</h2>
-    <p>If you have any questions or concerns about this Privacy Policy, you can contact us at:</p>
-    <p><strong>Email:</strong> fawwynawwy.dev@gmail.com</p>
+    <h2>14. Changes to This Privacy Policy</h2>
+    <p>This Privacy Policy may be updated when QuranScroll's features or data practices change. Material changes will be reflected by updating the “Last Updated” date on this page.</p>
+
+    <h2>15. Contact Us</h2>
+    <p>If you have questions, concerns, or privacy requests, contact:</p>
+    <p><strong>Email:</strong> <a href="mailto:fawwynawwy.dev@gmail.com">fawwynawwy.dev@gmail.com</a></p>
 
 </body>
 </html>
