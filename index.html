@@ -33,13 +33,13 @@
     <p>QuranScroll is committed to protecting your privacy. This Privacy Policy explains what information the app accesses, what remains on your device, what limited information is transmitted when you use online or purchase features, and how that information is handled.</p>
 
     <h2>1. Overview</h2>
-    <p>QuranScroll does not require you to create an account. The app does not use third-party advertising SDKs, does not sell personal information, and does not upload your Quran reading activity, bookmarks, streaks, reading statistics, Focus App Blocker selections, or personal app preferences to QuranScroll servers.</p>
+    <p>QuranScroll does not require you to create an account. The app does not use third-party advertising SDKs, does not sell personal information, and does not upload your Quran reading activity, daily reading goals, bookmarks, streaks, reading statistics, Focus App Blocker selections, or personal app preferences to QuranScroll servers.</p>
     <p>Some optional features require an internet connection. In particular, optional Google Play purchases require limited purchase and transaction information to be securely transmitted and retained for verification, fraud prevention, aggregate funding progress, and refund handling. These practices are described below.</p>
 
     <h2>2. Information Stored on Your Device</h2>
     <p>To provide core app functionality, QuranScroll stores data locally on your device. This may include:</p>
     <ul>
-        <li>Your reading progress, last-read verse, Juz progress, bookmarks, bookmark categories, streaks, and reading statistics</li>
+        <li>Your reading progress, last-read verse, Juz progress, bookmarks, bookmark categories, daily reading goals, streaks, and reading statistics</li>
         <li>Your app preferences, including language, translation, Tafsir source, font, reader mode, audio, reminder, and theme settings</li>
         <li>Your Focus App Blocker settings, including the apps you select and your unlock preferences</li>
         <li>Downloaded recitation audio, Quran fonts, Tafsir cache, and other cached content used for performance or offline access</li>
@@ -68,20 +68,23 @@
         <li>QuranScroll accesses the package name and app label of apps you choose to block</li>
         <li>This information is used only to determine when to show the unlock reading flow</li>
         <li>Accessibility access can be disabled at any time in Android Accessibility settings</li>
+        <li>QuranScroll does not request Android's “display over other apps” permission for this feature</li>
         <li>QuranScroll does not use Accessibility access to read personal messages, passwords, typed text, or the contents of other apps for advertising, analytics, or profiling</li>
     </ul>
     <p>Focus App Blocker selections and activity are handled locally on your device and are not uploaded to QuranScroll servers.</p>
 
     <h2>5. Photo Library Access</h2>
-    <p>QuranScroll may allow you to select an image from your device for use as a custom background theme.</p>
+    <p>QuranScroll allows you to select an image for use as a custom background theme through Android's system photo picker.</p>
     <ul>
-        <li>The selected image is copied and processed locally on your device</li>
+        <li>The picker lets you choose a specific image without giving QuranScroll broad access to your photo library</li>
+        <li>QuranScroll does not request camera, legacy storage, or “display over other apps” permission for custom backgrounds</li>
+        <li>The selected image is copied to QuranScroll's private app storage and processed locally on your device</li>
         <li>The image is not uploaded to QuranScroll servers</li>
         <li>You can replace or remove the custom background within the app</li>
     </ul>
 
     <h2>6. Notifications</h2>
-    <p>If you enable reading reminders, QuranScroll requests permission to send notifications. Reminder schedules and streak-related notification information are handled locally on your device. Notification permission is not required to use the main Quran reading features.</p>
+    <p>QuranScroll may request permission to send notifications for optional reading reminders and Android background-audio controls. Reading reminders can use your locally stored daily goal, progress, streak, preferred reminder time, and saved ayah to create a relevant on-device reminder and return you to your reading position when tapped. Reminder schedules are updated or removed locally when your goal or settings change. This information is not sent to QuranScroll servers. Notification permission is not required to use the main Quran reading features.</p>
 
     <h2>7. Audio, Fonts, Tafsir, and Other Online Content</h2>
     <p>QuranScroll may connect to external content providers to stream or download Quran recitations, word audio, Quran fonts, or Tafsir. Current providers include EveryAyah, Quran.com/Quran Foundation services, and other sources identified in the app's Credits section.</p>
@@ -99,7 +102,7 @@
         <li>EveryAyah for Quran recitation audio</li>
         <li>Quran.com/Quran Foundation services for Quran fonts, word audio, and Tafsir content</li>
         <li>Discord for optional community information and invitations</li>
-        <li>Your operating system and Expo/React Native components for local notifications, audio, file selection, and sharing</li>
+        <li>Your operating system and Expo/React Native components for local notifications, audio, the system photo picker, and sharing</li>
     </ul>
     <p>These providers may process information according to their own terms and privacy policies. QuranScroll does not authorize these providers to use QuranScroll purchase-verification data for advertising.</p>
 
